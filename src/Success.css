@@ -1,0 +1,20 @@
+.success {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+  height: 300px;
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.success-icon {
+  font-size: 80px;
+  color: green;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.success-icon:hover {
+  transition: transform 450ms;
+  transform: scale(1.09);
+}
