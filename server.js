@@ -70,7 +70,7 @@ app.use((err, req, res, next) => {
   }
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 8080, () => {
   const mongoose = require("mongoose");
   const mongoDB =
     "mongodb+srv://elvis:13845teeka@cluster0.dl5c2.mongodb.net/HostGuest?retryWrites=true&w=majority";
