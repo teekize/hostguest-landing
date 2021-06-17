@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
-import Form from "./Form";
+
 import dennis from "./reviews/dennis-karuri.jpg";
 import ty from "./reviews/Ty.jpg";
 import cole from "./reviews/cole.jpg";
@@ -160,19 +160,19 @@ const App = () => {
           <ul className="contacts">
             <li className="footer-list-item">
               {" "}
-              <a href="#" target="_" className="footer-link">
+              <a href="teeka" target="_" className="footer-link">
                 Facebook{" "}
               </a>
             </li>
             <li className="footer-list-item">
               {" "}
-              <a href="#" target="_" className="footer-link">
+              <a href="teeka" target="_" className="footer-link">
                 Twitter
               </a>{" "}
             </li>
             <li className="footer-list-item">
               {" "}
-              <a href="#" target="_" className="footer-link">
+              <a href="teeka" target="_" className="footer-link">
                 Instagram
               </a>{" "}
             </li>
