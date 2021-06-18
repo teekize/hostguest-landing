@@ -6,6 +6,7 @@ import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
 import dennis from "./reviews/dennis-karuri.jpg";
 import ty from "./reviews/Ty.jpg";
 import cole from "./reviews/cole.jpg";
+import Form from "./Form.js";
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
       <div className="lets-go">
         <span>Sign up as host</span>
 
-        <button className="lets-go-button">Join</button>
+        <button className="lets-go-button">
+          <a href="#host-signup">Join</a>
+        </button>
       </div>
       <div className="app-header">
         <div className="app-logo">
@@ -58,25 +61,6 @@ const App = () => {
                 want, and how you want. Accept bookings and cash out via Mpesa.
               </span>
             </li>
-            {/* <li className="app-list-item">
-              <span className="list-item-div">
-                <CheckCircleOutlineIcon className="item-icon" />
-                have more cash
-              </span>
-            </li>
-            <li className="app-list-item">
-              <span className="list-item-div">
-                <CheckCircleOutlineIcon className="item-icon" />
-                have more cash
-              </span>
-            </li>
-
-            <li className="app-list-item">
-              <span className="list-item-div">
-                <CheckCircleOutlineIcon className="item-icon" />
-                have more cash
-              </span>
-            </li> */}
           </ul>
         </div>
       </div>
@@ -84,7 +68,9 @@ const App = () => {
 
       {/* --------------------- FORM COMPONENT------------------------------ */}
 
-      <div className="app-form"></div>
+      <div className="app-form">
+        <Form />
+      </div>
 
       {/* --------------------- FORM COMPONENT------------------------------ */}
 
@@ -105,7 +91,7 @@ const App = () => {
             <img
               src={dennis}
               alt="experince background"
-              className="review-image"
+              className="img-fluid review-image"
             />
             <span className="review-name">Dennis Karuri</span>{" "}
             <span className="job">Make Up artist</span>
@@ -120,7 +106,7 @@ const App = () => {
             <img
               src={cole}
               alt="experince background"
-              className="review-image"
+              className="img-fluid review-image"
             />
             <span className="review-name">Cole Agneta</span>{" "}
             <span className="job">Poet</span>
@@ -136,7 +122,11 @@ const App = () => {
           </div>
 
           <div className="app-review-card threeT">
-            <img src={ty} alt="experince background" className="review-image" />
+            <img
+              src={ty}
+              alt="experince background"
+              className="img-fluid review-image"
+            />
             <span className="review-name">Ty Ngachira</span>{" "}
             <span className="job"> Stand-up comedian</span>
             <p className="review-bio">
@@ -166,13 +156,21 @@ const App = () => {
             </li>
             <li className="footer-list-item">
               {" "}
-              <a href="teeka" target="_" className="footer-link">
+              <a
+                href="https://twitter.com/Hostguest_?s=09"
+                target="_"
+                className="footer-link"
+              >
                 Twitter
               </a>{" "}
             </li>
             <li className="footer-list-item">
               {" "}
-              <a href="teeka" target="_" className="footer-link">
+              <a
+                href="https://www.instagram.com/explore/tags/hostguest/?hl=en"
+                target="_"
+                className="footer-link"
+              >
                 Instagram
               </a>{" "}
             </li>
@@ -190,7 +188,7 @@ const App = () => {
             </li>
             <li className="footer-list-item">
               {" "}
-              <span>Telephone</span> +254700000000{" "}
+              <span>Telephone : </span> +254700000000{" "}
             </li>
             <li className="footer-list-item">
               {" "}

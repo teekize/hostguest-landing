@@ -1,18 +1,21 @@
 import "./Form.css";
-import ErrorIcon from "@material-ui/icons/Error";
+// import ErrorIcon from "@material-ui/icons/Error";
 
 function Form(props) {
-  return (
-    <form onSubmit={props.handleSUbmit} className="app-form">
-      {props.iserror ? (
-        <span className="error-container">
-          <ErrorIcon className="icon-error" />
-          <h1 className="error-header">There is some errors in form</h1>
-        </span>
-      ) : (
-        ""
-      )}
+  const handleSUbmit = (e) => {
+    e.preventDefault();
+    const data = {
+      firstname: e.target.firstname.value,
+      lastname: e.target.lastname.value,
+      email: e.target.email.value,
+      phonenumber: e.target.phonenumber.value,
+      category: e.target.category.value,
+    };
 
+    alert(data);
+  };
+  return (
+    <form onSubmit={handleSUbmit} className="app-form" id="host-signup">
       <div className="app-form-wrapper">
         <div className="host-info">
           <h3 className="host-info-header">Host info</h3>
@@ -69,14 +72,32 @@ function Form(props) {
         </div>
 
         <div className="password-row">
-          <label className="app-form-label">Password</label>
-          <input
-            type="password"
-            required
-            name="password"
-            className="app-form-input"
-            placeholder="what is your password ?"
-          />
+          <label for="inputState" className="app-form-label">
+            What category would you host ?
+          </label>
+          <select
+            id="inputState"
+            class="form-control app-form-input"
+            name="category"
+          >
+            <option selected>Choose...</option>
+            <option value="SPORTS-HEALTH">SPORTS-HEALTH</option>
+            <option value="MUSIC-AND-DANCE">MUSIC-AND-DANCE</option>
+            <option value="ARTS-CRAFT-CULTURE">ARTS-CRAFT-CULTURE</option>
+
+            <option value="ADRENALINE-ADVENTURE-NATURE-OUTDOORS">
+              OUTDOORS
+            </option>
+            <option value="NIGHTLIFE-AND-PARTIES">NIGHTLIFE-AND-PARTIES</option>
+            <option value="IMPROV-MAGIC-COMEDY">COMEDY</option>
+
+            <option value="SCI-FI-GAMES">SCI-FI-GAMES</option>
+            <option value="WELLNESS-SPIRITUALITY">SPIRITUALITY</option>
+            <option value="FOOD-AND-DRINK">FOOD-AND-DRINK</option>
+
+            <option value="SOCIAL-GOOD">SOCIAL-GOOD</option>
+            <option value="LECTURES-AND-WORKSHOPS">LECTURES</option>
+          </select>
         </div>
 
         <div className="password-row">
@@ -85,19 +106,7 @@ function Form(props) {
             Join
           </button>
         </div>
-
-        {/* </div> */}
       </div>
-
-      {props.errors.length === 0 ? (
-        ""
-      ) : (
-        <div className="app-form-errors">
-          <ul>
-            <li>{props.errors.message}</li>
-          </ul>
-        </div>
-      )}
     </form>
   );
 }
