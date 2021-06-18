@@ -2,37 +2,57 @@ import React from "react";
 import "./App.css";
 
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import MusicNoteIcon from "@material-ui/icons/MusicNote";
+import MailIcon from "@material-ui/icons/Mail";
+import PhoneIcon from "@material-ui/icons/Phone";
 
 import dennis from "./reviews/dennis-karuri.jpg";
 import ty from "./reviews/Ty.jpg";
 import cole from "./reviews/cole.jpg";
+import hero from "./hero.jpeg";
+import Clogo from "./Clogo.jpeg";
+import logo from "./logo.jpeg";
 import Form from "./Form.js";
 
 const App = () => {
   return (
     <div className="app">
       {/* --------------------HEADER COMPONENT----------------------------- */}
-      <div className="lets-go">
+      {/* <div className="lets-go">
         <span>Sign up as host</span>
 
         <button className="lets-go-button">
           <a href="#host-signup">Join</a>
         </button>
-      </div>
+      </div> */}
       <div className="app-header">
         <div className="app-logo">
-          <img
-            src="pink.png"
-            alt="experince background"
-            className="app-image"
-          />
+          <img src={logo} alt="experince background" className="app-image" />
           <p className="app-name">HostGuest</p>
         </div>
 
+        <img
+          src={hero}
+          alt="hero image of guest"
+          className="img-fluid"
+          style={{
+            height: "200px",
+            width: "100",
+            objectFit: "cover",
+            backgroundColor: "#000",
+          }}
+        />
+
         <h4 className="app-header-title">
-          Earn up to
-          <br /> Ksh. 105,000 a month doing what you love
+          Earn up to Ksh.105,000 a month doing what you love.
         </h4>
+
+        <h6 className="app-header-mini-sale">
+          Want to be your own boss? Start today.
+        </h6>
 
         <div className="app-benefits">
           <h4 className="app-list-item">Why host an experience?</h4>
@@ -50,15 +70,14 @@ const App = () => {
               <span className="list-item-div">
                 <CheckCircleOutlineIcon className="item-icon" />
                 Signing up is easy; Set up is easy with no costs on your part.
-                After your account activation is complete, you can start
-                earning.
+                After your account activation is complete, you can start earning
               </span>
             </li>
             <li className="app-list-item">
               <span className="list-item-div">
                 <CheckCircleOutlineIcon className="item-icon" />
                 Earn anytime, anywhere: You can host when you want, where you
-                want, and how you want. Accept bookings and cash out via Mpesa.
+                want, and how you want.Accept bookings and cash out via Mpesa
               </span>
             </li>
           </ul>
@@ -80,9 +99,8 @@ const App = () => {
           <h1>Reviews</h1>
 
           <p className="reviews-intro">
-            Join a group of young people who want to share experiences this
-            group has some really awesome activities they want to engage their
-            commmunities and share with them.
+            Join a group of people who want to share experiences with their
+            communities
           </p>
         </div>
 
@@ -146,12 +164,28 @@ const App = () => {
 
       <footer className="app-footer">
         <div className="footer-left">
-          <span className="footer-column-title">Socials</span>
+          {/* <span className="footer-column-title">Socials</span> */}
           <ul className="contacts">
             <li className="footer-list-item">
               {" "}
               <a href="teeka" target="_" className="footer-link">
-                Facebook{" "}
+                <div className="footer-logo-div">
+                  {/* <img
+                    src="pink.png"
+                    alt="experince background"
+                    className="footer-image"
+                  /> */}
+
+                  <p className="footer-logo-title">HostGuest</p>
+                </div>
+                {/* <p className="app-name">HostGuest</p> */}
+                {/* </div> */}
+              </a>
+            </li>
+            <li className="footer-list-item">
+              {" "}
+              <a href="teeka" target="_" className="footer-link">
+                <FacebookIcon className="footer-icons" />
               </a>
             </li>
             <li className="footer-list-item">
@@ -161,7 +195,7 @@ const App = () => {
                 target="_"
                 className="footer-link"
               >
-                Twitter
+                <TwitterIcon className="footer-icons" />
               </a>{" "}
             </li>
             <li className="footer-list-item">
@@ -171,51 +205,43 @@ const App = () => {
                 target="_"
                 className="footer-link"
               >
-                Instagram
+                <InstagramIcon className="footer-icons" />
+              </a>{" "}
+            </li>
+
+            <li className="footer-list-item">
+              {" "}
+              <a
+                href="https://www.tiktok.com/@hostguest_"
+                target="_"
+                className="footer-link"
+              >
+                <MusicNoteIcon className="footer-icons" />
               </a>{" "}
             </li>
           </ul>
+
+          <ul className="contacts-second">
+            <li className="footer-list-item">
+              {" "}
+              <span>
+                <MailIcon className="footer-icons" />
+              </span>{" "}
+              <a href="mailto:info@hostguest.app">info@hostguest.app</a>
+            </li>
+            <li className="footer-list-item">
+              {" "}
+              <span>
+                <PhoneIcon className="footer-icons" />{" "}
+              </span>{" "}
+              0700356023{" "}
+            </li>
+          </ul>
+
+          <p>Made with love by HostGuest</p>
         </div>
 
         <hr />
-
-        <div className="footer-left">
-          <span className="footer-column-title">Contacts</span>
-          <ul className="contacts">
-            <li className="footer-list-item">
-              {" "}
-              <span>Email</span> info@hostguest
-            </li>
-            <li className="footer-list-item">
-              {" "}
-              <span>Telephone : </span> +254700000000{" "}
-            </li>
-            <li className="footer-list-item">
-              {" "}
-              <span>Linkedin</span> /HostGuest{" "}
-            </li>
-          </ul>
-        </div>
-
-        <hr />
-
-        <div className="footer-left">
-          <span className="footer-column-title">Adress Info</span>
-          <ul className="contacts">
-            <li className="footer-list-item">
-              {" "}
-              <span>Location</span> Kilimani
-            </li>
-            <li className="footer-list-item">
-              {" "}
-              <span>Street</span> Kilimani Road
-            </li>
-            <li className="footer-list-item">
-              {" "}
-              <span>Building</span> Kilimani Heights{" "}
-            </li>
-          </ul>
-        </div>
       </footer>
     </div>
   );
