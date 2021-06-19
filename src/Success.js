@@ -5,7 +5,7 @@ function Success() {
   return (
     <div className="success">
       <CheckCircleOutlineIcon className="success-icon" />
-      <h2>Sucesssfully signed up</h2>
+      <h2 className="cash">Sucesssfully registered</h2>
     </div>
   );
 }

@@ -58,6 +58,7 @@
   border-radius: 10px;
   object-fit: contain;
   flex: 1.5;
+  background-image: linear-gradient(to bottom, transparent, #000);
 }
 
 .app-name {
@@ -70,18 +71,25 @@
 
 .app-header-title {
   text-align: center;
-  color: rgb(235, 235, 235);
+  color: #fffef2;
   margin: 5px 10px;
   padding: 10px 20px;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 3.3125rem;
   text-align: left;
+}
+.cash {
+  color: #ec008c;
 }
 
 .app-header-mini-sale {
   margin: 0px 10px;
   padding: 10px 20px;
+  text-align: left;
+  line-height: 1.625rem;
+  font-size: 0.9907rem;
+  color: #979797;
 }
 .app-form {
   margin: 0px;
@@ -140,13 +148,13 @@
 
 .reviews-title h1 {
   text-align: left;
-  margin: 10px 5px;
-  margin-left: 20px;
-  color: rgb(87, 85, 85);
+  margin: 10px 0px;
+  margin-left: 0px;
+  color: #979797;
 }
 
 .reviews-intro {
-  margin: 0px 10px;
+  margin: 0px 0px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: 300;
@@ -187,7 +195,7 @@
   border: none;
   border-radius: 10px;
   padding: 5px;
-  background-color: rgb(245, 184, 194);
+  background-color: #ec008c;
 }
 
 .review-bio {
@@ -219,6 +227,7 @@
   justify-content: space-around;
   align-items: top;
   padding: 0px 0px;
+  border-top: 1px solid white;
 }
 
 .footer-left {
@@ -226,6 +235,7 @@
   padding: 1px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* .footer-column-title {
@@ -237,18 +247,19 @@
   display: flex;
 }
 .footer-list-item {
-  margin: 5px 0px;
+  margin: 0px 0px;
   padding: 5px;
   margin-right: 10px;
 }
 
 .footer-link {
   text-decoration: none;
-  color: none;
+  color: white;
 }
 
-.footer-link:active {
-  color: rgb(87, 87, 243);
+.footer-link:link {
+  color: white;
+  text-decoration-color: white;
 }
 
 .footer-logo {
@@ -273,11 +284,22 @@
 }
 
 .footer-icons {
-  background-color: rgb(241, 62, 92);
+  color: #ec008c;
+  margin-right: 5px;
 }
+
+/* .hr-color {
+  color: #ec008c;
+  margin: 2;
+  padding: 0;
+} */
 
 .contacts-second {
   margin-top: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-end-word {
+  color: #979797;
 }

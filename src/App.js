@@ -47,7 +47,8 @@ const App = () => {
         />
 
         <h4 className="app-header-title">
-          Earn up to Ksh.105,000 a month doing what you love.
+          Earn up to <span className="cash">Ksh.105,000</span> a month doing
+          what you love.
         </h4>
 
         <h6 className="app-header-mini-sale">
@@ -61,23 +62,33 @@ const App = () => {
             <li className="app-list-item">
               <span className="list-item-div">
                 <CheckCircleOutlineIcon className="item-icon" />
-                Set your own schedule: Only host when it works for you. There’s
-                no office and no boss. That means you’ll always work on your
-                time—because with HostGuest, you’re in charge.
+                Set your own schedule: Only host when it works for you.
               </span>
             </li>
             <li className="app-list-item">
               <span className="list-item-div">
                 <CheckCircleOutlineIcon className="item-icon" />
-                Signing up is easy; Set up is easy with no costs on your part.
+                There’s no office and no boss. That means you’ll always work on
+                your time.
+              </span>
+            </li>
+            <li className="app-list-item">
+              <span className="list-item-div">
+                <CheckCircleOutlineIcon className="item-icon" />
+                Signing up is easy : Set up is easy with no costs on your part.
+              </span>
+            </li>
+
+            <li className="app-list-item">
+              <span className="list-item-div">
+                <CheckCircleOutlineIcon className="item-icon" />
                 After your account activation is complete, you can start earning
               </span>
             </li>
             <li className="app-list-item">
               <span className="list-item-div">
                 <CheckCircleOutlineIcon className="item-icon" />
-                Earn anytime, anywhere: You can host when you want, where you
-                want, and how you want.Accept bookings and cash out via Mpesa
+                Accept bookings and cash out via Mpesa
               </span>
             </li>
           </ul>
@@ -100,7 +111,7 @@ const App = () => {
 
           <p className="reviews-intro">
             Join a group of people who want to share experiences with their
-            communities
+            communities.
           </p>
         </div>
 
@@ -161,7 +172,7 @@ const App = () => {
       {/* --------------------------- REVIEW COMPONENT------------------------ */}
 
       {/* --------------------------- FOOTER COMPONENT -------------------------- */}
-
+      {/* <hr className="hr-color" /> */}
       <footer className="app-footer">
         <div className="footer-left">
           {/* <span className="footer-column-title">Socials</span> */}
@@ -176,7 +187,7 @@ const App = () => {
                     className="footer-image"
                   /> */}
 
-                  <p className="footer-logo-title">HostGuest</p>
+                  <p className="footer-logo-title cash">HostGuest</p>
                 </div>
                 {/* <p className="app-name">HostGuest</p> */}
                 {/* </div> */}
@@ -184,7 +195,11 @@ const App = () => {
             </li>
             <li className="footer-list-item">
               {" "}
-              <a href="teeka" target="_" className="footer-link">
+              <a
+                href="https://m.facebook.com/Host.Guests/"
+                target="_"
+                className="footer-link"
+              >
                 <FacebookIcon className="footer-icons" />
               </a>
             </li>
@@ -227,7 +242,9 @@ const App = () => {
               <span>
                 <MailIcon className="footer-icons" />
               </span>{" "}
-              <a href="mailto:info@hostguest.app">info@hostguest.app</a>
+              <a href="mailto:info@hostguest.app" className="footer-link">
+                info@hostguest.app
+              </a>
             </li>
             <li className="footer-list-item">
               {" "}
@@ -238,10 +255,8 @@ const App = () => {
             </li>
           </ul>
 
-          <p>Made with love by HostGuest</p>
+          <p className="footer-end-word">Desigined with ❤️ by HostGuest</p>
         </div>
-
-        <hr />
       </footer>
     </div>
   );

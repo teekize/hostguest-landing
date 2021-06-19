@@ -51,6 +51,7 @@
   border: none;
   border-radius: 10px;
   background-color: rgb(231, 236, 240);
+  color: #000;
 }
 
 .app-form-label {
@@ -77,4 +78,9 @@
   width: 250px;
   margin-left: 30px;
   margin-bottom: 10px;
+  background-color: rgb(231, 236, 240);
+}
+
+.formik-error {
+  color: #ec008c;
 }
