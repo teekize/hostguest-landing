@@ -107,11 +107,8 @@ const App = () => {
       {/* --------------------------- REVIEW COMPONENT------------------------ */}
       <div className="app-reviews">
         <div className="reviews-title">
-          <h1>Reviews</h1>
-
           <p className="reviews-intro">
-            Join a group of people who want to share experiences with their
-            communities.
+            Join a diverse community of hosts and start earning.
           </p>
         </div>
 
@@ -178,8 +175,6 @@ const App = () => {
                     alt="experince background"
                     className="footer-image"
                   /> */}
-
-                  <p className="footer-logo-title cash">HostGuest</p>
                 </div>
                 {/* <p className="app-name">HostGuest</p> */}
                 {/* </div> */}
@@ -226,28 +221,45 @@ const App = () => {
                 <MusicNoteIcon className="footer-icons" />
               </a>{" "}
             </li>
-          </ul>
 
-          <ul className="contacts-second">
             <li className="footer-list-item">
               {" "}
-              <span>
-                <MailIcon className="footer-icons" />
-              </span>{" "}
+              <span></span>{" "}
               <a href="mailto:info@hostguest.app" className="footer-link">
-                info@hostguest.app
+                <MailIcon className="footer-icons" />
               </a>
             </li>
             <li className="footer-list-item">
               {" "}
               <span>
-                <PhoneIcon className="footer-icons" />{" "}
+                <a href="tel:0700356023">
+                  <PhoneIcon className="footer-icons" />{" "}
+                </a>
               </span>{" "}
-              0700356023{" "}
+              {/* 0700356023{" "} */}
             </li>
           </ul>
 
-          <p className="footer-end-word">Desigined with ❤️ by HostGuest</p>
+          {/* <ul className="contacts-second">
+            <li className="footer-list-item">
+              {" "}
+              <span></span>{" "}
+              <a href="mailto:info@hostguest.app" className="footer-link">
+                <MailIcon className="footer-icons" />
+              </a>
+            </li>
+            <li className="footer-list-item">
+              {" "}
+              <span>
+                <a href="tel:0700356023">
+                  <PhoneIcon className="footer-icons" />{" "}
+                </a>
+              </span>{" "}
+              {/* 0700356023{" "} 
+            </li>
+          </ul> */}
+
+          <p className="footer-end-word">Desigined with 💗 by HostGuest</p>
         </div>
       </footer>
     </div>

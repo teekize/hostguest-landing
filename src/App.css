@@ -154,7 +154,7 @@
 }
 
 .reviews-intro {
-  margin: 0px 0px;
+  margin: 10px 10px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: 300;
@@ -226,7 +226,7 @@
   /* flex-direction: ; */
   justify-content: space-around;
   align-items: top;
-  padding: 0px 0px;
+  padding: 10px 0px;
   border-top: 1px solid white;
 }
 
@@ -245,6 +245,7 @@
 .contacts {
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
 }
 .footer-list-item {
   margin: 0px 0px;
