@@ -13,7 +13,7 @@ import dennis from "./reviews/dennis-karuri.jpg";
 import ty from "./reviews/Ty.jpg";
 import cole from "./reviews/cole.jpg";
 import hero from "./hero.jpeg";
-import Clogo from "./Clogo.jpeg";
+// import Clogo from "./Clogo.jpeg";
 import logo from "./logo.jpeg";
 import Form from "./Form.js";
 
@@ -36,7 +36,7 @@ const App = () => {
 
         <img
           src={hero}
-          alt="hero image of guest"
+          alt="hero1"
           className="img-fluid"
           style={{
             height: "200px",
@@ -132,11 +132,7 @@ const App = () => {
           </div>
 
           <div className="app-review-card twoC">
-            <img
-              src={cole}
-              alt="experince background"
-              className="img-fluid review-image"
-            />
+            <img src={cole} alt="cole" className="img-fluid review-image" />
             <span className="review-name">Cole Agneta</span>{" "}
             <span className="job">Poet</span>
             <p className="review-bio">
@@ -151,11 +147,7 @@ const App = () => {
           </div>
 
           <div className="app-review-card threeT">
-            <img
-              src={ty}
-              alt="experince background"
-              className="img-fluid review-image"
-            />
+            <img src={ty} alt="ngachira" className="img-fluid review-image" />
             <span className="review-name">Ty Ngachira</span>{" "}
             <span className="job"> Stand-up comedian</span>
             <p className="review-bio">
