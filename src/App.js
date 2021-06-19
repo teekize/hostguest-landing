@@ -36,7 +36,7 @@ const App = () => {
 
         <img
           src={hero}
-          alt="hero1"
+          alt="hero"
           className="img-fluid"
           style={{
             height: "200px",
